@@ -9,6 +9,6 @@ export class SearchPipe implements PipeTransform {
             return null;
         }
         console.log('transform');
-        return value.filter(item=>item["name"]toLowerCase().indexOf(queryString.toLowerCase()) !== -1);
+        return value.filter(item=>item["name"].toLowerCase().indexOf(queryString.toLowerCase()) !== -1);
     }
 }
